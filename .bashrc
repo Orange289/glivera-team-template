@@ -17,7 +17,7 @@ cd site
 # Удаляем ненужные папки и папку с гитом
 rm -rf .git settings.jar
 # Линкуем глобальные пакеты(сюда можно поставить npm install)
-npm install --save-dev gulp rimraf gulp-jade gulp-sass gulp-inline-image gulp-autoprefixer gulp-plumber gulp-directory-sync browser-sync gulp-concat gulp-cssfont64 gulp-html5-lint gulp-purifycss gulp-uglify gulp-imagemin imagemin-pngquant gulp-csso gulp-sourcemaps gulp-postcss postcss-assets postcss-reporter stylelint gulp-svg-sprite gulp-svgmin gulp-cheerio gulp-replace
+npm link gulp rimraf gulp-jade gulp-sass gulp-inline-image gulp-autoprefixer gulp-plumber gulp-directory-sync browser-sync gulp-concat gulp-cssfont64 gulp-html5-lint gulp-purifycss gulp-uglify gulp-imagemin imagemin-pngquant gulp-csso gulp-sourcemaps gulp-postcss postcss-assets postcss-reporter stylelint gulp-svg-sprite gulp-svgmin gulp-cheerio gulp-replace
 # Открываем проект в PhpStorm
 atom /c/Users/Orange/Desktop/test_projects/site_$1\($2\)/site
 # Запускаем gulp(или npm run start)
