@@ -95,7 +95,7 @@ mixin breadcrumbs(array,add_class)
 
 mixin main_menu(menuArray)
 	ul.main_menu_list(class="#{menuArray.mod}")
-		each item in menuArray.items
+		each item in menuArray
 			if item.active
 				li.main_menu_item.active_mod(class="#{menuArray.mod}")
 					a.main_menu_link(href="#" class="#{menuArray.mod}") #{item.title}
@@ -177,6 +177,3 @@ mixin link_list(array,mod)
 		each item in array
 			li(class="#{mod}_item")
 				a(class="#{mod}_link" href="#")= item
-
-
-
