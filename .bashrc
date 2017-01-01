@@ -5,9 +5,9 @@ createNewProject() {
 # Переходим в папку с проектами
 pro
 # Создаем новую папку, $1 - номер проекта, $2 - название
-mkdir site_$1\($2\)
+mkdir site_$1_$2
 # Переходим в папку с проектом
-cd site_$1\($2\)
+cd site_$1_$2
 # Создаем папку для исходников(макеты, шрифты)
 mkdir source
 # Клонируем стартовый шаблон с гитхаба
@@ -19,7 +19,7 @@ rm -rf .git settings.jar
 # Линкуем глобальные пакеты(сюда можно поставить npm install)
 npm link gulp rimraf gulp-jade gulp-sass gulp-inline-image gulp-autoprefixer gulp-plumber gulp-directory-sync browser-sync gulp-concat gulp-cssfont64 gulp-html5-lint gulp-purifycss gulp-uglify gulp-imagemin imagemin-pngquant gulp-csso gulp-sourcemaps gulp-postcss postcss-assets postcss-reporter stylelint gulp-svg-sprite gulp-svgmin gulp-cheerio gulp-replace
 # Открываем проект в PhpStorm
-atom /c/Users/Orange/Desktop/test_projects/site_$1\($2\)/site
+atom /c/Users/Orange/Desktop/test_projects/site_$1_$2/site
 # Запускаем gulp(или npm run start)
 gulp
 }
